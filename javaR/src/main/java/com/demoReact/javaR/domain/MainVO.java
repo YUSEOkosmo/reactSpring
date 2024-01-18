@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Date;
 
@@ -12,7 +13,7 @@ import java.sql.Date;
 @Setter
 @ToString
 @NoArgsConstructor
-public class mainVO {
+public class MainVO {
 
     private int BBS_NO;
 
