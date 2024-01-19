@@ -10,4 +10,6 @@ import java.util.List;
 public interface BoardMapper {
 
     public List<MainVO> getArticles();
+
+    public int writeArticle(MainVO mainVO);
 }

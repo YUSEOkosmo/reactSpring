@@ -18,4 +18,9 @@ public class BoardServiceImpl implements BoardService {
     public List<MainVO> getArticles() {
         return boardMapper.getArticles();
     }
+
+    @Override
+    public int writeArticle(MainVO mainVO) {
+        return boardMapper.writeArticle(mainVO);
+    }
 }

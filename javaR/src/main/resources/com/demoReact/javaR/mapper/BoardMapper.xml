@@ -10,4 +10,18 @@
         , WROTE_DATE
         FROM BOARD
     </select>
+
+    <insert id="writeArticle" parameterType="com.demoReact.javaR.domain.MainVO">
+        INSERT INTO BOARD
+            TITLE,
+            CONTENT,
+            AUTHOR,
+            WROTE_DATE
+        VALUES(
+            #{title},
+            #{content},
+            #{author},
+            SYSDATE
+            )
+    </insert>
 </mapper>

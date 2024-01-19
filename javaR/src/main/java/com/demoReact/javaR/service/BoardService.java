@@ -8,4 +8,6 @@ import java.util.List;
 @Service
 public interface BoardService {
     public List<MainVO> getArticles();
+
+    public int writeArticle(MainVO mainVO);
 }
