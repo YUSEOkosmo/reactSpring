@@ -58,7 +58,9 @@ class newBBSComponent extends Component{
                                     <div className = "form-group">
                                         <label> 제목 </label>
                                         <input type="text" placeholder="제목" name="title" className="form-control" value={this.state.title} onChange={this.setTitle}/>
+                                        <label> 내용 </label>
                                         <input type="text" placeholder="내용" name="title" className="form-control" value={this.state.content} onChange={this.setContent}/>
+                                        <label> 글쓴이 </label>
                                         <input type="text" placeholder="글쓴이" name="title" className="form-control" value={this.state.author} onChange={this.setAuthor}/>
 
                                     </div>
