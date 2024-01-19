@@ -16,9 +16,9 @@ public class MainController {
     }
 
     @GetMapping("/api/data")
-    public String main(MainVO mainVo) throws SQLException {
+    public List<MainVO> main(MainVO mainVo) throws SQLException {
 
         List<MainVO> resultList = boardService.getArticles();
-        return "HELLLLLLLtLLLO";
+        return resultList;
     }
 }

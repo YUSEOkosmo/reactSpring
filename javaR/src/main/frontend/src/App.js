@@ -1,26 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {useEffect, useState} from 'react'; //이게 변수?
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ListBoardComponent from './components/ListBoardComponent';
+import HeaderComponent from './components/HeaderComponent';
+import FooterComponent from './components/FooterComponent';
 
 function App() {
-    const [message, setMessage] = useState("")
-
-    useEffect(() => {
-        fetch('/api/data').then(response => response.text())
-        .then(message => {
-            setMessage(message);
-        });
-    },[])
-
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <h1 className="App-title">{message}</h1>
-            </header>
-            <p className="App-intro">
-                HIHIHIHIHIHII
-            </p>
+        <div>
+            <Router>
+                <HeaderComponent>
+                    <div className="container">
+                        <switch>
+                            <Route path="/" exact component = {ListBoardComponent}></Route>
+                            <Route path="/board" component = {ListBoardComponent}></Route>
+                        </switch>
+                    </div>
+                </HeaderComponent>
+            </Router>
         </div>
     );
 }
