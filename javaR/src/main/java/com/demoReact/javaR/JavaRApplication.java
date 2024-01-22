@@ -14,8 +14,8 @@ import javax.sql.DataSource;
 @SpringBootApplication
 @MapperScan(basePackages = "com.demoReact.javaR.mapper")
 public class JavaRApplication {
-
 	public static void main(String[] args) {
+
 		SpringApplication.run(JavaRApplication.class, args);
 	}
 

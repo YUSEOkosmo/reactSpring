@@ -13,10 +13,10 @@
 
     <insert id="writeArticle" parameterType="com.demoReact.javaR.domain.MainVO">
         INSERT INTO BOARD
-            TITLE,
+            (TITLE,
             CONTENT,
             AUTHOR,
-            WROTE_DATE
+            WROTE_DATE)
         VALUES(
             #{title},
             #{content},

@@ -34,11 +34,11 @@ const ListBoardComponent = () => {
                     </thead>
                     <tbody>
                         {boards.map((board) => (
-                            <tr key = {board.bbs_NO}>
-                                <td>{board.bbs_NO}</td>
+                            <tr key = {board.bbsNo}>
+                                <td>{board.bbsNo}</td>
                                 <td>{board.title}</td>
                                 <td>{board.author}</td>
-                                <td>{board.wrote_DATE}</td>
+                                <td>{board.wroteDate}</td>
                             </tr>
                         ))}
                     </tbody>

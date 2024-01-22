@@ -15,13 +15,13 @@ import java.sql.Date;
 @NoArgsConstructor
 public class MainVO {
 
-    private int BBS_NO;
+    private Integer bbsNo;
 
-    private String TITLE;
+    private String title;
 
-    private String CONTENT;
+    private String content;
 
-    private String AUTHOR;
+    private String author;
 
-    private Date WROTE_DATE;
+    private Date wroteDate;
 }

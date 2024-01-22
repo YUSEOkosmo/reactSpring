@@ -36,7 +36,7 @@ class newBBSComponent extends Component{
         };
 
         console.log("글 : " + JSON.stringify(board));
-        BoardService.write(board).then(res => {
+        BoardService.writeNewBBS(board).then(res => {
             this.props.history.push('/save');
         });
 
